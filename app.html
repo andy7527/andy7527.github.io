@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<style type="text/css">
+body{
+	text-align:center
+} 
+.body-img{
+	width: 375px;
+	height: auto;
+	cursor: pointer;
+}
+</style>
+<body>
+<img class="body-img" src-path="./bc/app/" src="./bc/app/1.png" onclick="changeSrc()" alt="点击页面切换下一张" >
+
+</body>
+<script type="text/javascript">
+var index = 1;
+function changeSrc(){
+	// console.log(index);
+	if(index == 91){
+		index = 1;		
+	}else{
+		index = index + 1;
+	}
+	document.getElementsByClassName('body-img')[0].src="./bc/app/"+ index +".png";
+
+}
+</script>
+</html>

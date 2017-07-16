@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<style type="text/css">
+.body-img{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+</style>
+<body>
+<img class="body-img" src-path="./bc/pc/" src="./bc/pc/index.jpg" onclick="changeSrc()" alt="点击页面切换下一张" >
+
+</body>
+<script type="text/javascript">
+var index = 1;
+function changeSrc(){
+	// console.log(index);
+	if(index == 27){
+		document.getElementsByClassName('body-img')[0].src="./bc/pc/index.jpg";
+		index = 1;
+	}else{
+		document.getElementsByClassName('body-img')[0].src="./bc/pc/"+ index +".jpg";
+		index = index + 1;
+	}
+
+}
+</script>
+</html>
