@@ -8,7 +8,7 @@
 }
 </style>
 <body>
-<img class="body-img" src-path="./bc/pc/" src="./pc/index.jpg" onclick="changeSrc()" alt="点击页面切换下一张" >
+<img class="body-img" src="./pc/index.jpg" onclick="changeSrc()" alt="点击页面切换下一张" >
 
 </body>
 <script type="text/javascript">
@@ -16,10 +16,10 @@ var index = 1;
 function changeSrc(){
 	// console.log(index);
 	if(index == 27){
-		document.getElementsByClassName('body-img')[0].src="./bc/pc/index.jpg";
+		document.getElementsByClassName('body-img')[0].src="./pc/index.jpg";
 		index = 1;
 	}else{
-		document.getElementsByClassName('body-img')[0].src="./bc/pc/"+ index +".jpg";
+		document.getElementsByClassName('body-img')[0].src="./pc/"+ index +".jpg";
 		index = index + 1;
 	}
 
